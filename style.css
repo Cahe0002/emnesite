@@ -11,11 +11,77 @@ img {
   display: block;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #ccbfa3;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; /* caps lock text */
+  font-size: 24px; /* menu text size */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  font-size: 24px;
+  display: block;
+  padding: 10px;
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: #ffffff;
+}
+
+.kurv img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
 svg path {
   fill: #ccbfa3;
   stroke: white;
   stroke-width: 0.5px;
-  transition: fill 0.6s;
+}
+
+svg {
+  width: 90%;
+  max-width: 1500px;
+  height: auto;
+  padding-top: 80px;
+  align-items: center;
 }
 
 .Denmark:hover {
@@ -30,4 +96,10 @@ svg path {
 #ES:hover {
   fill: #737a5d;
   cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  svg path {
+    fill: none;
+  }
 }
