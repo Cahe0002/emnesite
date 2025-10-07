@@ -14,9 +14,9 @@ img {
 header {
   display: flex;
   align-items: center;
-  padding: 20px 30px;
-  background-color: #ccbfa3;
-  font-family: "Oswald", sans-serif;
+  padding: 25px 25px;
+  background-color: #dfded2;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase; /* caps lock text */
   font-size: 24px; /* menu text size */
   position: sticky;
@@ -29,7 +29,7 @@ nav {
   flex: 1;
   display: flex;
   justify-content: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
 }
 
@@ -43,9 +43,9 @@ nav {
 
 .menu a {
   text-decoration: none;
-  color: black;
-  font-weight: lighter;
-  font-size: 24px;
+  color: #444935;
+  font-weight: normal;
+  font-size: 17px;
   display: block;
   padding: 10px;
   transition: color 0.3s;
@@ -54,7 +54,7 @@ nav {
   color: #ffffff;
 }
 
-.kurv img {
+.kurv_search img {
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -62,16 +62,57 @@ nav {
   height: 50px;
 }
 
+.logo img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  width: 100px;
+  height: 100px;
+}
+
 h1 {
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Baskervville", serif;
   font-weight: 100;
   text-transform: uppercase;
   padding-top: 50px;
 }
 
+.explore {
+  color: white;
+  font-weight: lighter;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 30px;
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.explore:hover {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+::selection {
+  background: #444935;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 svg path {
-  fill: #ccbfa3;
+  fill: #444935;
   stroke: white;
   stroke-width: 0.5px;
 }
@@ -94,12 +135,63 @@ svg {
 #SE:hover,
 #ZW:hover,
 #ES:hover {
-  fill: #737a5d;
+  fill: #dfded2;
   cursor: pointer;
 }
 
 @media screen and (max-width: 850px) {
   svg path {
     fill: none;
+  }
+  nav {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: row;
+    position: relative;
+    font-size: 9px;
+    align-items: center;
+    gap: 1px;
+    margin-right: 10px;
+  }
+
+  .logo img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Baskervville", serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-top: 50px;
+  }
+
+  .explore {
+    color: white;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .text_lande {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  footer {
+    font-size: 9px;
   }
 }
