@@ -11,10 +11,6 @@ img {
   display: block;
 }
 
-.main {
-  max-width: 1200px;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -76,10 +72,14 @@ nav {
 
 h1 {
   text-align: center;
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
   font-weight: 100;
   text-transform: uppercase;
   padding-top: 50px;
+}
+
+.Baskerville {
+  font-family: "Baskerville", serif;
 }
 
 .explore {
@@ -113,6 +113,7 @@ h2 {
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 10px;
+  color: #333333;
 }
 
 h3 {
@@ -123,6 +124,44 @@ h3 {
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 10px;
+  color: #333333;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  background-color: #a7ad8b;
+}
+
+.Boxed {
+  display: block;
+  width: 600px;
+  margin: 0 auto 20px;
+  color: rgb(191, 191, 191);
+  border: 0.5px solid #333333;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  text-transform: none;
+}
+
+.Boxed_2 {
+  display: block;
+  margin: 0 auto 20px;
+  width: 600px;
+  color: rgb(255, 255, 255);
+  background-color: #a7ad8b;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .text_1 h3 {
@@ -142,9 +181,40 @@ h3 {
 .stroke {
   width: 1350px;
   height: 0.5px;
-  background: rgb(0, 0, 0);
+  background: #333333;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #dfded2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer p {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.icon-with-text svg {
+  stroke: #444935;
+  fill: none;
+}
+
+.icon-text {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+}
+
+.icon-with-text svg path {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
 }
 
 svg path {
@@ -153,7 +223,7 @@ svg path {
   stroke-width: 0.5px;
 }
 
-svg {
+.Verdenskort svg {
   width: 90%;
   max-width: 1500px;
   height: auto;
@@ -173,13 +243,4 @@ svg {
 #ES:hover {
   fill: #dfded2;
   cursor: pointer;
-}
-
-@media screen and (max-width: 850px) {
-  svg path {
-    fill: none;
-  }
-  nav {
-    display: block;
-  }
 }

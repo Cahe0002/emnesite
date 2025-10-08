@@ -32,6 +32,23 @@
   grid-area: 1/1;
 }
 
+.Boxed_3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.icon-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 850px) {
   .billeder_forside {
     display: grid;
