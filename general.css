@@ -13,8 +13,9 @@ img {
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 25px 25px;
+  padding: 20px 20px;
   background-color: #dfded2;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -26,8 +27,9 @@ header {
 }
 
 nav {
-  flex: 1;
+  flex: 3;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -35,39 +37,39 @@ nav {
 
 .menu {
   display: flex;
-  gap: 50px;
+  flex-direction: row;
+  gap: 100px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .menu a {
   text-decoration: none;
   color: #444935;
   font-weight: normal;
-  font-size: 17px;
-  display: block;
-  padding: 10px;
+  font-size: 20px;
   transition: color 0.3s;
 }
+
 .menu a:hover {
   color: #ffffff;
 }
 
-.kurv_search img {
+.logo {
+  display: flex;
+  justify-items: flex-start;
+  height: 60px;
+  width: auto;
+}
+
+.kurv_search {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  width: 50px;
-  height: 50px;
+  gap: 35px;
 }
 
-.logo img {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  width: 100px;
-  height: 100px;
+.search {
+  margin-right: 20px;
 }
 
 h1 {
@@ -127,6 +129,21 @@ h3 {
   padding-top: 20px;
   padding-bottom: 10px;
   color: #333333;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: #333333;
+  font-weight: 300;
+}
+
+.finland-text:hover {
+  font-weight: 500;
+}
+
+.alle-lande h3 {
+  font-family: "Baskerville", serif;
+  font-style: normal;
 }
 
 h4 {
@@ -205,6 +222,12 @@ h4:hover {
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 20px;
+}
+
+.stroke_vertical {
+  width: 0.5px;
+  height: 20px;
+  background: #333333;
 }
 
 footer {
