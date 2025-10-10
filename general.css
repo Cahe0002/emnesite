@@ -72,6 +72,111 @@ nav {
   margin-right: 20px;
 }
 
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #dfded2;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #dfded2;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav {
+    flex: 3;
+    display: flex;
+    margin-left: 20px;
+    justify-content: flex-end;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 125px;
+    margin-left: 10px;
+  }
+
+  .kurv_search {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+  }
+
+  .search {
+    display: none;
+    margin-right: 0px;
+  }
+}
+
 h1 {
   text-align: center;
   font-family: "Baskerville", serif;
@@ -105,6 +210,26 @@ a:link {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .explore {
+    color: white;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .explore:hover {
+    text-decoration: none;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+}
+
 ::selection {
   background: #444935;
   color: white;
@@ -125,7 +250,7 @@ h3 {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -135,12 +260,17 @@ h3 {
 
 h3:hover {
   color: #333333;
-  font-weight: 300;
+  font-weight: 400;
+  transition: ease-in;
 }
 
 .alle-lande_2 h3 {
   font-family: "Baskerville", serif;
   margin: 0px;
+}
+
+.alle-lande_2 h3:hover {
+  font-weight: 600;
 }
 
 .alle-lande_2 {
@@ -163,6 +293,7 @@ h4 {
 h4:hover {
   background-color: #444935;
   color: white;
+  font-weight: 400;
 }
 
 .Boxed_3 {
@@ -223,6 +354,12 @@ h4:hover {
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 20px;
+}
+
+.stroke_3 {
+  width: 500px;
+  height: 0.5px;
+  background: #333333;
 }
 
 .stroke_vertical {
@@ -286,7 +423,7 @@ footer {
 .Verdenskort svg {
   max-width: 1500px;
   height: auto;
-  margin-top: 50px;
+  margin-top: 25px;
   align-items: center;
 }
 

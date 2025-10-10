@@ -26,6 +26,58 @@
   margin-top: 35px;
 }
 
+@media screen and (max-width: 600px) {
+  .billeder_forside {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+  }
+
+  .billeder_forside_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+  }
+
+  .billeder_forside_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+  }
+}
+
+.wolf1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.Wolf_frame {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-items: start;
+}
+
+.Wolf_frame > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
 .hero .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -49,6 +101,19 @@
   grid-template-columns: 1fr 4fr 1fr;
 }
 
+@media screen and (max-width: 600px) {
+  .lande_verdenskort {
+    display: none;
+  }
+}
+
+.alle-lande_2 {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  gap: 10px;
+}
+
 .text_lande_1 {
   grid-area: 1/1;
 }
@@ -62,6 +127,14 @@
 .Boxed_3 {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .Boxed_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .footer {
@@ -80,39 +153,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.alle-lande_2 {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-@media screen and (max-width: 850px) {
-  .billeder_forside {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 35px;
-  }
-
-  .billeder_forside_2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 35px;
-  }
-
-  .billeder_forside_3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 35px;
-  }
 }
