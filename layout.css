@@ -114,6 +114,15 @@
   gap: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .alle-lande_2 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    gap: 5px;
+  }
+}
+
 .text_lande_1 {
   grid-area: 1/1;
 }
