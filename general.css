@@ -162,19 +162,22 @@ nav {
   .logo {
     max-width: 125px;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 11px;
   }
 
   .kurv_search {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    gap: 35px;
+  }
+
+  .kurv {
+    margin-left: 15px;
   }
 
   .search {
     display: none;
-    margin-right: 0px;
+    margin: 0px;
   }
 }
 
@@ -328,18 +331,17 @@ h4:hover {
 
 .Boxed_3 {
   justify-content: center;
-  width: 100%;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
 .Boxed {
   max-width: 600px;
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   color: rgb(191, 191, 191);
   border: 0.5px solid #333333;
-  padding: 20px;
+  padding: 20px 400px 20px 10px;
   font-family: "Lato", sans-serif;
   font-weight: lighter;
   text-transform: none;
@@ -347,10 +349,11 @@ h4:hover {
 
 .Boxed_2 {
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   color: rgb(255, 255, 255);
   background-color: #a7ad8b;
-  padding: 20px;
+  padding: 20px 205px 20px 205px;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -361,6 +364,45 @@ h4:hover {
 .Boxed_2:hover {
   background-color: #444935;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .Boxed_3 {
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .Boxed {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(191, 191, 191);
+    border: 0.5px solid #333333;
+    padding: 20px 105px 20px 105px;
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    text-transform: none;
+  }
+
+  .Boxed_2 {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #a7ad8b;
+    padding: 20px 105px 20px 105px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .Boxed_2:hover {
+    background-color: #444935;
+    color: white;
+  }
 }
 
 .text_1 h3 {
@@ -402,9 +444,6 @@ h4:hover {
   background: #333333;
 }
 
-header,
-nav,
-.menu,
 body,
 html {
   max-width: 100%;
