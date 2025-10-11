@@ -90,7 +90,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   header {
     display: flex;
     justify-content: end;
@@ -160,7 +160,8 @@ nav {
   }
 
   .logo {
-    width: 125px;
+    max-width: 125px;
+    width: 100%;
     margin-left: 10px;
   }
 
@@ -192,7 +193,7 @@ h1 {
   margin-top: 60px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .Baskerville {
     font-family: "Baskerville", serif;
     font-size: 25px;
@@ -218,7 +219,7 @@ a:link {
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .explore {
     color: white;
     font-weight: lighter;
@@ -272,7 +273,7 @@ h3:hover {
   transition: ease-in;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   h3 {
     text-align: center;
     font-family: "Lato", sans-serif;
@@ -327,11 +328,13 @@ h4:hover {
 
 .Boxed_3 {
   justify-content: center;
+  width: 100%;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
 .Boxed {
+  max-width: 600px;
   width: 600px;
   margin: 0 auto;
   color: rgb(191, 191, 191);
@@ -369,7 +372,8 @@ h4:hover {
 }
 
 .stroke {
-  width: 1350px;
+  width: 90%;
+  max-width: 1350px;
   height: 0.5px;
   background: #333333;
   margin: 0 auto;
@@ -377,7 +381,8 @@ h4:hover {
 }
 
 .stroke_2 {
-  width: 1350px;
+  width: 90%;
+  max-width: 1350px;
   height: 0.5px;
   background: #333333;
   margin: 0 auto;
@@ -397,7 +402,21 @@ h4:hover {
   background: #333333;
 }
 
-@media screen and (max-width: 600px) {
+header,
+nav,
+.menu,
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .stroke {
     width: 420px;
     height: 0.5px;
@@ -481,8 +500,8 @@ footer {
 }
 
 .Verdenskort svg {
-  max-width: 1500px;
-  height: auto;
+  width: 100%;
+  max-width: 100%;
   margin-top: 25px;
   align-items: center;
 }
