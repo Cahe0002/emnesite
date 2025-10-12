@@ -513,6 +513,15 @@ footer {
   stroke-width: 0.5px;
 }
 
+.rights {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 11px;
+  word-spacing: 2px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   footer {
     background-color: #dfded2;
@@ -526,9 +535,9 @@ footer {
   .icon-text {
     width: 100%;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 6px;
     margin-bottom: 35px;
-    font-size: 10px;
+    font-size: 9px;
     color: #333333;
     text-align: center;
     line-height: 1.6em;
@@ -547,20 +556,19 @@ footer {
   }
 
   .icon svg {
-    margin-top: 3px;
+    width: 70%;
     stroke: none;
     cursor: pointer;
-    height: 35px;
   }
-}
 
-.rights {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 11px;
-  word-spacing: 2px;
-  text-align: center;
+  .rights {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 8px;
+    word-spacing: 2px;
+    text-align: center;
+  }
 }
 
 .line-height {

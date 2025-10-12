@@ -193,6 +193,10 @@
     gap: 30px;
   }
 
+  .icon-1 svg {
+    height: 35px;
+  }
+
   .icon-with-text {
     width: 100%;
     max-width: 100%;
