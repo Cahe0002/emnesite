@@ -421,28 +421,23 @@ h4:hover {
 }
 
 .stroke {
+  border: none;
+  height: 0.5px;
+  background-color: #333333;
   width: 90%;
   max-width: 1350px;
-  height: 0.5px;
-  background: #333333;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 0 auto 80px auto;
 }
 
 .stroke_2 {
+  border: none;
+  height: 0.5px;
+  background-color: #333333;
   width: 90%;
   max-width: 1350px;
-  height: 0.5px;
-  background: #333333;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
   margin-top: 80px;
   margin-bottom: 20px;
-}
-
-.stroke_3 {
-  width: 500px;
-  height: 0.5px;
-  background: #333333;
 }
 
 .stroke_vertical {
@@ -463,33 +458,36 @@ html {
     overflow-x: hidden;
   }
 
-  .stroke {
-    width: 420px;
-    height: 0.5px;
-    background: #333333;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
-  .stroke_2 {
-    width: 420px;
-    height: 0.5px;
-    background: #333333;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-
-  .stroke_3 {
-    width: 420px;
-    height: 0.5px;
-    background: #333333;
-  }
-
   .stroke_vertical {
     width: 0.5px;
     height: 15px;
     background: #333333;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  hr.stroke {
+    width: 85%;
+    margin-bottom: 60px;
+    border: none;
+    height: 0.5px;
+    background-color: #333333;
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto 80px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  hr.stroke {
+    width: 90%;
+    margin-bottom: 50px;
+    border: none;
+    height: 0.5px;
+    background-color: #333333;
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto 80px auto;
   }
 }
 
