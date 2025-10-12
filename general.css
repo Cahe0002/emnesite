@@ -374,31 +374,16 @@ h4:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .Boxed_3 {
+  .Boxed_2 {
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 30px;
-  }
-
-  .Boxed {
-    max-width: 400px;
-    width: 100%;
     margin: 0 auto;
-    color: rgb(191, 191, 191);
-    border: 0.5px solid #333333;
-    padding: 20px 105px 20px 105px;
-    font-family: "Lato", sans-serif;
-    font-weight: lighter;
-    text-transform: none;
-  }
-
-  .Boxed_2 {
-    margin: 0 auto;
-    max-width: 400px;
+    max-width: 100%;
     width: 100%;
     color: rgb(255, 255, 255);
     background-color: #a7ad8b;
-    padding: 20px 105px 20px 105px;
+    padding: 15px 105px 15px 105px;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -503,6 +488,12 @@ footer {
   word-spacing: 2px;
 }
 
+.footer_2 p {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
 .icon-text {
   margin-top: 20px;
   margin-bottom: 35px;
@@ -532,9 +523,9 @@ footer {
     text-transform: uppercase;
     word-spacing: 0.5px;
   }
-
   .icon-text {
     width: 100%;
+    max-width: 100%;
     margin-top: 20px;
     margin-bottom: 35px;
     font-size: 10px;
@@ -547,14 +538,19 @@ footer {
     font-size: 10px;
     margin: 0 auto;
     line-height: 1em;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .icon-with-text svg path {
     fill: none;
     stroke: black;
     stroke-width: 0.5px;
+  }
+
+  .icon svg {
+    margin-top: 3px;
+    stroke: none;
+    cursor: pointer;
+    height: 35px;
   }
 }
 
