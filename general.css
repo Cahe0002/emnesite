@@ -208,6 +208,38 @@ h1 {
   text-align: center;
 }
 
+.right svg {
+  position: absolute;
+  right: 35px;
+  margin-top: 50px;
+}
+
+.left svg {
+  position: absolute;
+  left: 35px;
+  margin-top: 50px;
+}
+
+.item-left {
+  display: flex;
+  align-items: center; /* vertical alignment for all children */
+}
+
+.left {
+  display: flex;
+  align-items: center; /* aligns SVG and image vertically */
+}
+
+.item-right {
+  display: flex;
+  align-items: center; /* vertical alignment for all children */
+}
+
+.right {
+  display: flex;
+  align-items: center; /* aligns SVG and image vertically */
+}
+
 .newsletter {
   position: relative; /* Absolute positioning of SVG */
   width: 100%;
@@ -223,8 +255,16 @@ h1 {
 
 .newsletter svg {
   position: absolute;
-  right: 62px;
+  right: 76px;
   top: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#top {
+  scroll-margin-top: 80px; /* height of your header */
 }
 
 @media only screen and (max-width: 768px) {
@@ -232,6 +272,22 @@ h1 {
     font-family: "Baskerville", serif;
     font-size: 25px;
     margin-top: 60px;
+  }
+
+  .newsletter h2 {
+    margin: 0;
+  }
+
+  .newsletter svg {
+    display: none;
+  }
+
+  .right svg {
+    display: none;
+  }
+
+  .left svg {
+    display: none;
   }
 }
 
@@ -274,7 +330,7 @@ a:link {
 }
 
 ::selection {
-  background: #444935;
+  background: #737a5d;
   color: white;
 }
 
@@ -335,6 +391,7 @@ h3:hover {
 
 .alle-lande_2 h3:hover {
   font-weight: 600;
+  transform: scale(1.05);
 }
 
 .alle-lande_2 {
@@ -636,6 +693,46 @@ footer {
 #ES:hover {
   fill: #dfded2;
   cursor: pointer;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 80px;
+  margin-top: 60px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 17.5px;
+}
+
+.column img {
+  margin-top: 35px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* .image-wrapper {
