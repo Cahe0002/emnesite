@@ -186,6 +186,10 @@ nav {
     gap: 40px;
     font-size: small;
   }
+
+  .lande_verdenskort {
+    display: none;
+  }
 }
 
 h1 {
@@ -201,6 +205,7 @@ h1 {
   font-family: "Baskerville", serif;
   font-size: 30px;
   margin-top: 60px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -452,26 +457,32 @@ html {
 
 @media screen and (max-width: 1024px) {
   hr.stroke {
-    width: 85%;
+    width: 90%;
     margin-bottom: 60px;
     border: none;
     height: 0.5px;
     background-color: #333333;
-    width: 90%;
-    max-width: 1350px;
+    max-width: 100%;
     margin: 0 auto 80px auto;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  .footer_2 {
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   hr.stroke {
     width: 90%;
     margin-bottom: 50px;
     border: none;
     height: 0.5px;
     background-color: #333333;
-    width: 90%;
-    max-width: 1350px;
+    max-width: 100%;
     margin: 0 auto 80px auto;
   }
 }
@@ -607,3 +618,19 @@ footer {
   fill: #dfded2;
   cursor: pointer;
 }
+
+/* .image-wrapper {
+  display: grid;
+  width: 100%;
+  position: relative;
+}
+
+.image-wrapper img,
+.quick-view {
+  grid-area: 1 / 1;
+}
+
+.quick-view {
+  align-items: flex-end;
+  align-content: end;
+} */

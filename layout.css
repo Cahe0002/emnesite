@@ -141,6 +141,7 @@
   .Boxed_3 {
     display: flex;
     flex-direction: column;
+    font-size: 10.5px;
     gap: 20px;
     margin-left: 40px;
     margin-right: 40px;
