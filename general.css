@@ -719,15 +719,24 @@ footer {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
+  .row {
+    margin-top: 40px;
+    padding: 0 40px;
+  }
   .column {
     -ms-flex: 50%;
-    flex: 50%;
+    flex: 25%;
     max-width: 50%;
+    padding: 0 15px;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .row {
+    padding: 0 40px;
+    margin-top: 60px;
+  }
   .column {
     -ms-flex: 100%;
     flex: 100%;
