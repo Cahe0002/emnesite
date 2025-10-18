@@ -81,7 +81,7 @@
 .hero .container {
   display: grid;
   grid-template-columns: 1fr;
-  place-items: top;
+  place-items: start center;
   width: 100%;
 }
 
@@ -94,6 +94,21 @@
 
 .explore {
   grid-area: 1 / 1;
+}
+
+.arrow.right {
+  grid-column: 2 / 3; /* right column */
+  justify-self: end; /* stick to right */
+  align-self: center; /* vertically centered */
+  z-index: 2;
+}
+
+.arrow.left {
+  grid-column: 2 / 3; /* right column */
+  grid-row: 1;
+  justify-self: end; /* stick to right */
+  align-self: center; /* vertically centered */
+  z-index: 2;
 }
 
 .lande_verdenskort {

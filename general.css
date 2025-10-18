@@ -65,6 +65,7 @@ nav {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  position: sticky;
   gap: 35px;
 }
 
@@ -339,6 +340,7 @@ h2 {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 200;
+  font-size: 18px;
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -363,6 +365,20 @@ h3:hover {
   transition: ease-in;
 }
 
+.alle-lande_2 h3 {
+  font-family: "Baskerville", serif;
+  margin: 0px;
+}
+
+.alle-lande_2 h3:hover {
+  font-weight: 600;
+  transform: scale(1.05);
+}
+
+.alle-lande_2 {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   h3 {
     text-align: center;
@@ -382,20 +398,6 @@ h3:hover {
     font-weight: 400;
     transition: ease-in;
   }
-}
-
-.alle-lande_2 h3 {
-  font-family: "Baskerville", serif;
-  margin: 0px;
-}
-
-.alle-lande_2 h3:hover {
-  font-weight: 600;
-  transform: scale(1.05);
-}
-
-.alle-lande_2 {
-  margin-top: 20px;
 }
 
 h4 {
