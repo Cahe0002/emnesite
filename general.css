@@ -425,18 +425,6 @@ h4:hover {
   margin-top: 30px;
 }
 
-.Boxed {
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  color: rgb(191, 191, 191);
-  border: 0.5px solid #333333;
-  padding: 20px 400px 20px 10px;
-  font-family: "Lato", sans-serif;
-  font-weight: lighter;
-  text-transform: none;
-}
-
 .Boxed_2 {
   margin: 0 auto;
   max-width: 600px;
@@ -509,6 +497,7 @@ h4:hover {
 }
 
 .stroke_vertical {
+  margin-top: 2px;
   width: 0.5px;
   height: 20px;
   background: #333333;
@@ -701,7 +690,7 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 80px;
+  padding: 0 62px;
   margin-top: 60px;
 }
 
