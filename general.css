@@ -13,7 +13,8 @@ img {
 
 header {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
   align-items: center;
   padding: 20px 20px;
   background-color: #dfded2;
@@ -38,7 +39,7 @@ nav {
 .menu {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 60px;
   list-style: none;
 }
 
@@ -88,6 +89,33 @@ nav {
 }
 .burger {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+    transition: color 0.3s;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style: none;
+  }
+
+  .kurv_search {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .lande_verdenskort {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -178,16 +206,6 @@ nav {
   .search {
     display: none;
     margin: 0px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .menu {
-    gap: 40px;
-    font-size: small;
-  }
-  .lande_verdenskort {
-    display: none;
   }
 }
 
