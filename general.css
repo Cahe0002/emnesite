@@ -46,7 +46,7 @@ nav {
   text-decoration: none;
   color: #444935;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 19px;
   transition: color 0.3s;
 }
 
@@ -65,7 +65,6 @@ nav {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  position: sticky;
   gap: 35px;
 }
 
@@ -187,7 +186,6 @@ nav {
     gap: 40px;
     font-size: small;
   }
-
   .lande_verdenskort {
     display: none;
   }
@@ -199,7 +197,7 @@ h1 {
   font-weight: 100;
   color: #333333;
   text-transform: uppercase;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .Baskerville {
@@ -298,7 +296,7 @@ html {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 30px;
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 50px;
 }
 
