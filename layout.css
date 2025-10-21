@@ -55,15 +55,6 @@
   }
 }
 
-.wolf1 {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
-}
-
 .Wolf_frame {
   display: grid;
   grid-template-columns: 1fr 1fr;
