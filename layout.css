@@ -54,19 +54,39 @@
     margin-top: 35px;
   }
 }
+@media only screen and (min-width: 769px) {
+  .Wolf_frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-items: start;
+  }
 
-.Wolf_frame {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  justify-items: start;
+  .Wolf_frame > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
-.Wolf_frame > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+@media only screen and (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .wolfshop {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .Boxed_size {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
 }
 
 .hero .container {
