@@ -760,6 +760,26 @@ html {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  hr.stroke {
+    width: 90%;
+    margin-bottom: 60px;
+    border: none;
+    height: 0.5px;
+    background-color: #333333;
+    max-width: 100%;
+    margin: 0 auto 80px auto;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  .footer_2 {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   hr.stroke {
     width: 90%;
@@ -927,17 +947,19 @@ footer {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .row {
     margin-top: 40px;
     padding: 0 40px;
   }
   .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+    -ms-flex: 50%;
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 15px;
   }
 }
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .row {
@@ -966,23 +988,3 @@ footer {
   align-items: flex-end;
   align-content: end;
 } */
-
-@media screen and (max-width: 1024px) {
-  hr.stroke {
-    width: 90%;
-    margin-bottom: 60px;
-    border: none;
-    height: 0.5px;
-    background-color: #333333;
-    max-width: 100%;
-    margin: 0 auto 80px auto;
-  }
-
-  .footer {
-    font-size: 10px;
-  }
-
-  .footer_2 {
-    font-size: 12px;
-  }
-}
