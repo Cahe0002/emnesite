@@ -54,6 +54,13 @@
     margin-top: 35px;
   }
 }
+
+.Boxed_size {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
 @media only screen and (min-width: 769px) {
   .Wolf_frame {
     display: grid;
