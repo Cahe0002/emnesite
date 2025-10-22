@@ -496,7 +496,7 @@ h4:hover {
   cursor: pointer;
 }
 
-.Boxed_size p {
+p .Boxed_size {
   border: 0.5px solid;
   color: #333333;
   justify-content: center;
