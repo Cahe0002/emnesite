@@ -953,7 +953,6 @@ footer {
     padding: 0 40px;
   }
   .column {
-    -ms-flex: 50%;
     flex: 25%;
     max-width: 50%;
     padding: 0 15px;
